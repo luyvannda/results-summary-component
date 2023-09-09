@@ -25,8 +25,54 @@ $pale-blue: hsl(221, 100%, 96%);
 $light-lavender: hsl(241, 100%, 89%);
 $dark-gray-blue: hsl(224, 30%, 27%);
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  background-color: $pale-blue;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50vw;
+  height: 90vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    min-height: 50vh;
+    background: linear-gradient(to bottom,
+        $background-light-slate-blue 0%,
+        $background-light-royal-blue 90%);
+  }
+
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    min-height: 50vh;
+    background-color: $white;
+  }
+
 }
 
 .attribution {
