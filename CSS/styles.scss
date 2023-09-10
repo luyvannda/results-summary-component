@@ -55,13 +55,46 @@ body {
   justify-content: center;
 
   .left-container {
-    display: flex;
-    flex-direction: column;
     width: 25vw;
     min-height: 50vh;
     background: linear-gradient(to bottom,
         $background-light-slate-blue 0%,
         $background-light-royal-blue 90%);
+
+    .hero-text-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+
+      p:nth-child(1) {
+        font-size: 1.125rem;
+      }
+
+      h1,
+      h4,
+      p {
+        text-align: center;
+      }
+
+      h1,
+      h4 {
+        color: $white ;
+      }
+
+      p {
+        color: $light-lavender;
+      }
+
+      .score-description {
+        max-width: 25ch;
+        line-height: 1.2;
+        font-size: 1rem;
+      }
+
+    }
   }
 
 

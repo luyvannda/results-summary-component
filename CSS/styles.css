@@ -30,11 +30,37 @@ body {
   justify-content: center;
 }
 .grid-container .left-container {
-  display: flex;
-  flex-direction: column;
   width: 25vw;
   min-height: 50vh;
   background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 90%);
+}
+.grid-container .left-container .hero-text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.grid-container .left-container .hero-text-left p:nth-child(1) {
+  font-size: 1.125rem;
+}
+.grid-container .left-container .hero-text-left h1,
+.grid-container .left-container .hero-text-left h4,
+.grid-container .left-container .hero-text-left p {
+  text-align: center;
+}
+.grid-container .left-container .hero-text-left h1,
+.grid-container .left-container .hero-text-left h4 {
+  color: hsl(0, 0%, 100%);
+}
+.grid-container .left-container .hero-text-left p {
+  color: hsl(241, 100%, 89%);
+}
+.grid-container .left-container .hero-text-left .score-description {
+  max-width: 25ch;
+  line-height: 1.2;
+  font-size: 1rem;
 }
 .grid-container .right-container {
   display: flex;
