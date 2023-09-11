@@ -155,6 +155,23 @@ body {
   color: rgba(48, 59, 90, 0.6);
   font-weight: 500;
 }
+.grid-container .hero-text-right .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.grid-container .hero-text-right .btn input {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.5rem 7.5vw;
+  border: 1px solid hsl(224, 30%, 27%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.grid-container .hero-text-right .btn input:hover {
+  background-color: hsl(166, 100%, 37%);
+  border: 1px solid hsl(166, 100%, 37%);
+}
 
 .attribution {
   font-size: 11px;
