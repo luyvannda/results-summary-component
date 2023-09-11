@@ -56,7 +56,7 @@ body {
 
   .left-container {
     width: 25vw;
-    min-height: 50vh;
+    height: 19rem;
     background: linear-gradient(to bottom,
         $background-light-slate-blue 0%,
         $background-light-royal-blue 90%);
@@ -107,8 +107,6 @@ body {
         color: $light-lavender;
       }
 
-
-
       .score-description {
         max-width: 25ch;
         line-height: 1.2;
@@ -123,9 +121,28 @@ body {
     display: flex;
     flex-direction: column;
     width: 25vw;
-    min-height: 50vh;
+    height: 19rem;
     background-color: $white;
   }
+
+  .hero-text-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 1.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+
+    h5 {
+      font-size: 1.125rem;
+      color: $dark-gray-blue;
+    }
+
+    p {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
 
 }
 

@@ -31,7 +31,7 @@ body {
 }
 .grid-container .left-container {
   width: 25vw;
-  min-height: 50vh;
+  height: 19rem;
   background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 90%);
   border-radius: 16px;
 }
@@ -81,8 +81,23 @@ body {
   display: flex;
   flex-direction: column;
   width: 25vw;
-  min-height: 50vh;
+  height: 19rem;
   background-color: hsl(0, 0%, 100%);
+}
+.grid-container .hero-text-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.grid-container .hero-text-right h5 {
+  font-size: 1.125rem;
+  color: hsl(224, 30%, 27%);
+}
+.grid-container .hero-text-right p {
+  display: flex;
+  justify-content: space-between;
 }
 
 .attribution {
