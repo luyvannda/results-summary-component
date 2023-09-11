@@ -123,14 +123,15 @@ body {
     width: 25vw;
     height: 19rem;
     background-color: $white;
+    border-radius: 16px;
   }
 
   .hero-text-right {
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 0.7rem;
     margin-top: 1.5rem;
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 1.3rem 0 1.3rem;
 
     h5 {
       font-size: 1.125rem;
@@ -140,6 +141,8 @@ body {
     p {
       display: flex;
       justify-content: space-between;
+      padding: 0.5rem;
+      border-radius: 8px;
 
       span {
         display: flex;
@@ -152,20 +155,62 @@ body {
       }
     }
 
+    .reaction {
+      background-color: rgba($primary-light-red, 0.1);
+    }
+
     .reaction-name {
       color: $primary-light-red;
+    }
+
+    .memory {
+      background-color: rgba($primary-orangey-yellow, 0.1);
     }
 
     .memory-name {
       color: $primary-orangey-yellow;
     }
 
+    .verbal {
+      background-color: rgba($primary-green-teal, 0.1);
+    }
+
     .verbal-name {
       color: $primary-green-teal;
     }
 
+    .visual {
+      background-color: rgba($primary-cobalt-blue, 0.1);
+    }
+
     .visual-name {
       color: $primary-cobalt-blue;
+    }
+
+    .reaction-score,
+    .memory-score,
+    .verbal-score,
+    .visual-score {
+      color: $dark-gray-blue;
+      font-weight: 700;
+    }
+
+    .reaction-score {
+      margin-left: 3.1rem;
+    }
+
+    .memory-score {
+      margin-left: 3.3rem;
+    }
+
+    .verbal-score,
+    .visual-score {
+      margin-left: 4.1rem;
+    }
+
+    .total {
+      color: rgba($dark-gray-blue, 0.6);
+      font-weight: 500;
     }
   }
 
