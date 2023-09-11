@@ -99,6 +99,26 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.grid-container .hero-text-right p span {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.grid-container .hero-text-right p span img {
+  margin-right: 0.5rem;
+}
+.grid-container .hero-text-right .reaction-name {
+  color: hsl(0, 100%, 67%);
+}
+.grid-container .hero-text-right .memory-name {
+  color: hsl(39, 100%, 56%);
+}
+.grid-container .hero-text-right .verbal-name {
+  color: hsl(166, 100%, 37%);
+}
+.grid-container .hero-text-right .visual-name {
+  color: hsl(234, 85%, 45%);
+}
 
 .attribution {
   font-size: 11px;

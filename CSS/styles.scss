@@ -140,6 +140,32 @@ body {
     p {
       display: flex;
       justify-content: space-between;
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 0.875rem;
+
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .reaction-name {
+      color: $primary-light-red;
+    }
+
+    .memory-name {
+      color: $primary-orangey-yellow;
+    }
+
+    .verbal-name {
+      color: $primary-green-teal;
+    }
+
+    .visual-name {
+      color: $primary-cobalt-blue;
     }
   }
 
