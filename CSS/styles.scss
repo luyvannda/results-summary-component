@@ -142,7 +142,7 @@ body {
       display: flex;
       justify-content: space-between;
       padding: 0.5rem;
-      border-radius: 8px;
+
 
       span {
         display: flex;
@@ -153,6 +153,17 @@ body {
           margin-right: 0.5rem;
         }
       }
+    }
+
+    .item-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+    }
+
+    .span {
+      margin-right: 0.5rem;
     }
 
     .reaction {
@@ -193,19 +204,6 @@ body {
     .visual-score {
       color: $dark-gray-blue;
       font-weight: 700;
-    }
-
-    .reaction-score {
-      margin-left: 3.1rem;
-    }
-
-    .memory-score {
-      margin-left: 3.3rem;
-    }
-
-    .verbal-score,
-    .visual-score {
-      margin-left: 4.1rem;
     }
 
     .total {

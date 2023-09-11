@@ -100,7 +100,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  border-radius: 8px;
 }
 .grid-container .hero-text-right p span {
   display: flex;
@@ -108,6 +107,15 @@ body {
   font-size: 0.875rem;
 }
 .grid-container .hero-text-right p span img {
+  margin-right: 0.5rem;
+}
+.grid-container .hero-text-right .item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.grid-container .hero-text-right .span {
   margin-right: 0.5rem;
 }
 .grid-container .hero-text-right .reaction {
@@ -140,16 +148,6 @@ body {
 .grid-container .hero-text-right .visual-score {
   color: hsl(224, 30%, 27%);
   font-weight: 700;
-}
-.grid-container .hero-text-right .reaction-score {
-  margin-left: 3.1rem;
-}
-.grid-container .hero-text-right .memory-score {
-  margin-left: 3.3rem;
-}
-.grid-container .hero-text-right .verbal-score,
-.grid-container .hero-text-right .visual-score {
-  margin-left: 4.1rem;
 }
 .grid-container .hero-text-right .total {
   color: rgba(48, 59, 90, 0.6);

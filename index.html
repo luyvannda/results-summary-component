@@ -4,16 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32"
     href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="CSS/styles.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
 
 <body>
@@ -39,30 +35,48 @@
       <div class="hero-text-right">
         <h5>Summary</h5>
 
-        <p class="reaction"><span class="reaction-name"><img
-              src="assets/images/icon-reaction.svg"
-              alt="reaction icon">Reaction</span><span
-            class="reaction-score">80</span><span class="total"> / 100</span>
-        </p>
+        <div class="reaction item-container">
+          <p><span class="reaction-name"><img
+                src="assets/images/icon-reaction.svg"
+                alt="reaction icon">Reaction</span>
+          </p>
+          <div class="span">
+            <span class="reaction-score">80</span><span class="total"> /
+              100</span>
+          </div>
+        </div>
 
-        <p class="memory"><span class="memory-name"><img
-              src="assets/images/icon-memory.svg"
-              alt="memory icon">Memory</span><span
-            class="memory-score">92</span><span class="total"> / 100</span>
-        </p>
+        <div class="memory item-container">
+          <p><span class="memory-name"><img src="assets/images/icon-memory.svg"
+                alt="memory icon">Memory</span>
+          </p>
+          <div class="span">
+            <span class="memory-score">92</span><span class="total"> /
+              100</span>
+          </div>
+        </div>
 
-        <p class="verbal"><span class="verbal-name"><img
-              src="assets/images/icon-verbal.svg"
-              alt="verbal icon">Verbal</span><span
-            class="verbal-score">61</span><span class="total"> / 100</span>
-        </p>
+        <div class=" verbal item-container">
+          <p><span class="verbal-name"><img src="assets/images/icon-verbal.svg"
+                alt="verbal icon">Verbal</span>
+          </p>
 
-        <p class="visual"><span class="visual-name"><img
-              src="assets/images/icon-visual.svg"
-              alt="visual icon">Visual</span><span
-            class="visual-score">72</span><span class="total"> / 100</span>
-        </p>
+          <div class="span">
+            <span class="verbal-score">61</span><span class="total"> /
+              100</span>
+          </div>
+        </div>
 
+
+        <div class="visual item-container">
+          <p><span class="visual-name"><img src="assets/images/icon-visual.svg"
+                alt="visual icon">Visual</span>
+          </p>
+          <div class="span">
+            <span class="visual-score">72</span><span class="total"> /
+              100</span>
+          </div>
+        </div>
         <form class="btn" action="#">
           <input type="submit" value="Continue"></input>
         </form>
