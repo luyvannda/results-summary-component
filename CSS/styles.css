@@ -30,8 +30,8 @@ body {
   justify-content: center;
 }
 .grid-container .left-container {
-  width: 25vw;
-  height: 19rem;
+  width: max(25vw, 9.375rem);
+  height: 52.5vh;
   background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 90%);
   border-radius: 16px;
 }
@@ -80,8 +80,8 @@ body {
 .grid-container .right-container {
   display: flex;
   flex-direction: column;
-  width: 25vw;
-  height: 19rem;
+  width: max(25vw, 9.375rem);
+  height: 52.5vh;
   background-color: hsl(0, 0%, 100%);
   border-radius: 16px;
 }

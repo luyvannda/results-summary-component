@@ -55,8 +55,8 @@ body {
   justify-content: center;
 
   .left-container {
-    width: 25vw;
-    height: 19rem;
+    width: max(25vw, 9.375rem);
+    height: 52.5vh;
     background: linear-gradient(to bottom,
         $background-light-slate-blue 0%,
         $background-light-royal-blue 90%);
@@ -120,8 +120,8 @@ body {
   .right-container {
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    height: 19rem;
+    width: max(25vw, 9.375rem);
+    height: 52.5vh;
     background-color: $white;
     border-radius: 16px;
   }
