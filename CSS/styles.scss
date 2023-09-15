@@ -56,7 +56,7 @@ body {
 
   .left-container {
     width: min(25vw, 20rem);
-    height: 52.5vh;
+    height: clamp(23.5rem, 5vh + 1rem, 52.5vh);
     background: linear-gradient(to bottom,
         $background-light-slate-blue 0%,
         $background-light-royal-blue 90%);
@@ -83,8 +83,8 @@ body {
         background: linear-gradient(to bottom,
             $circle-violet-blue 30%,
             $circle-persian-blue);
-        width: min(22vw, 150px);
-        height: min(22vh, 150px);
+        width: clamp(125px, 5vw + 15rem, 150px);
+        height: clamp(125px, 5vw + 15rem, 150px);
         border-radius: 50%;
         display: flex;
         flex-direction: column;
@@ -130,7 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     width: min(25vw, 20rem);
-    height: 52.5vh;
+    height: clamp(23.5rem, 5vh + 1rem, 52.5vh);
     background-color: $white;
     border-radius: 16px;
   }

@@ -31,7 +31,7 @@ body {
 }
 .grid-container .left-container {
   width: min(25vw, 20rem);
-  height: 52.5vh;
+  height: clamp(23.5rem, 5vh + 1rem, 52.5vh);
   background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 90%);
   border-radius: 16px;
 }
@@ -52,8 +52,8 @@ body {
 }
 .grid-container .left-container .hero-text-left .circle {
   background: linear-gradient(to bottom, hsl(256, 72%, 46%) 30%, hsla(241, 72%, 46%, 0.5));
-  width: min(22vw, 150px);
-  height: min(22vh, 150px);
+  width: clamp(125px, 5vw + 15rem, 150px);
+  height: clamp(125px, 5vw + 15rem, 150px);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ body {
   display: flex;
   flex-direction: column;
   width: min(25vw, 20rem);
-  height: 52.5vh;
+  height: clamp(23.5rem, 5vh + 1rem, 52.5vh);
   background-color: hsl(0, 0%, 100%);
   border-radius: 16px;
 }
