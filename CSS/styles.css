@@ -40,6 +40,16 @@ body {
   background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 90%);
   border-radius: 16px;
 }
+@media only screen and (max-width: 426px) {
+  .grid-container .left-container {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .grid-container .left-container {
+    width: 100vw;
+  }
+}
 .grid-container .left-container .hero-text-left {
   display: flex;
   flex-direction: column;
@@ -97,80 +107,90 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 16px;
 }
-.grid-container .hero-text-right {
+@media only screen and (max-width: 426px) {
+  .grid-container .right-container {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .grid-container .right-container {
+    width: 100vw;
+  }
+}
+.grid-container .right-container .hero-text-right {
   display: flex;
   flex-direction: column;
   gap: clamp(0.7rem, 1vh + 0.5rem, 3vh);
   margin-top: 1.5rem;
-  padding: 0 1.3rem 0 1.3rem;
+  padding: 0 1.5rem 0 1.5rem;
 }
-.grid-container .hero-text-right h5 {
+.grid-container .right-container .hero-text-right h5 {
   font-size: clamp(1.125rem, 5vw + 0.5rem, 1.5rem);
   color: hsl(224, 30%, 27%);
 }
-.grid-container .hero-text-right p {
+.grid-container .right-container .hero-text-right p {
   display: flex;
   padding: clamp(0.5rem, 50%, 0.6rem);
 }
-.grid-container .hero-text-right p span {
+.grid-container .right-container .hero-text-right p span {
   display: flex;
   align-items: center;
   font-size: clamp(0.875rem, 5%, 2rem);
   font-weight: 600;
 }
-.grid-container .hero-text-right p span img {
+.grid-container .right-container .hero-text-right p span img {
   margin-right: 0.5rem;
 }
-.grid-container .hero-text-right .item-container {
+.grid-container .right-container .hero-text-right .item-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
 }
-.grid-container .hero-text-right .span {
+.grid-container .right-container .hero-text-right .span {
   margin-right: 0.5rem;
 }
-.grid-container .hero-text-right .reaction {
+.grid-container .right-container .hero-text-right .reaction {
   background-color: rgba(255, 87, 87, 0.1);
 }
-.grid-container .hero-text-right .reaction-name {
+.grid-container .right-container .hero-text-right .reaction-name {
   color: hsl(0, 100%, 67%);
 }
-.grid-container .hero-text-right .memory {
+.grid-container .right-container .hero-text-right .memory {
   background-color: rgba(255, 176, 31, 0.1);
 }
-.grid-container .hero-text-right .memory-name {
+.grid-container .right-container .hero-text-right .memory-name {
   color: hsl(39, 100%, 56%);
 }
-.grid-container .hero-text-right .verbal {
+.grid-container .right-container .hero-text-right .verbal {
   background-color: rgba(0, 189, 145, 0.1);
 }
-.grid-container .hero-text-right .verbal-name {
+.grid-container .right-container .hero-text-right .verbal-name {
   color: hsl(166, 100%, 37%);
 }
-.grid-container .hero-text-right .visual {
+.grid-container .right-container .hero-text-right .visual {
   background-color: rgba(17, 37, 212, 0.1);
 }
-.grid-container .hero-text-right .visual-name {
+.grid-container .right-container .hero-text-right .visual-name {
   color: hsl(234, 85%, 45%);
 }
-.grid-container .hero-text-right .reaction-score,
-.grid-container .hero-text-right .memory-score,
-.grid-container .hero-text-right .verbal-score,
-.grid-container .hero-text-right .visual-score {
+.grid-container .right-container .hero-text-right .reaction-score,
+.grid-container .right-container .hero-text-right .memory-score,
+.grid-container .right-container .hero-text-right .verbal-score,
+.grid-container .right-container .hero-text-right .visual-score {
   color: hsl(224, 30%, 27%);
   font-weight: 700;
 }
-.grid-container .hero-text-right .total {
+.grid-container .right-container .hero-text-right .total {
   color: rgba(48, 59, 90, 0.6);
   font-weight: 500;
 }
-.grid-container .hero-text-right .btn {
+.grid-container .right-container .hero-text-right .btn {
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
 }
-.grid-container .hero-text-right .btn input {
+.grid-container .right-container .hero-text-right .btn input {
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
   font-size: clamp(0.875rem, 5%, 2rem);
@@ -180,7 +200,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
-.grid-container .hero-text-right .btn input:hover {
+.grid-container .right-container .hero-text-right .btn input:hover {
   background-color: hsl(241, 81%, 54%);
   border: 1px solid hsl(241, 81%, 54%);
 }

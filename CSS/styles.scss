@@ -63,7 +63,6 @@ body {
 
   @include max-device-width(585px) {
     grid-template-columns: 1fr;
-
   }
 
   .left-container {
@@ -73,6 +72,14 @@ body {
         $background-light-slate-blue 0%,
         $background-light-royal-blue 90%);
     border-radius: 16px;
+
+    @include max-device-width(426px) {
+      width: 90vw;
+    }
+
+    @include max-device-width(376px) {
+      width: 100vw;
+    }
 
     .hero-text-left {
       display: flex;
@@ -145,119 +152,122 @@ body {
     height: clamp(23.5rem, 5vh + 1rem, 52.5vh);
     background-color: $white;
     border-radius: 16px;
-  }
 
-  .hero-text-right {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(0.7rem, 1vh + 0.5rem, 3vh);
-    margin-top: 1.5rem;
-    padding: 0 1.3rem 0 1.3rem;
-
-    h5 {
-      font-size: clamp(1.125rem, 5vw + 0.5rem, 1.5rem);
-      color: $dark-gray-blue;
+    @include max-device-width(426px) {
+      width: 90vw;
     }
 
-    p {
-      display: flex;
-      padding: clamp(0.5rem, 50%, 0.6rem);
+    @include max-device-width(376px) {
+      width: 100vw;
+    }
 
-      span {
+    .hero-text-right {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(0.7rem, 1vh + 0.5rem, 3vh);
+      margin-top: 1.5rem;
+      padding: 0 1.5rem 0 1.5rem;
+
+      h5 {
+        font-size: clamp(1.125rem, 5vw + 0.5rem, 1.5rem);
+        color: $dark-gray-blue;
+      }
+
+      p {
+        display: flex;
+        padding: clamp(0.5rem, 50%, 0.6rem);
+
+        span {
+          display: flex;
+          align-items: center;
+          font-size: clamp(0.875rem, 5%, 2rem);
+          font-weight: 600;
+
+          img {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .item-container {
         display: flex;
         align-items: center;
-        font-size: clamp(0.875rem, 5%, 2rem);
-        font-weight: 600;
+        justify-content: space-between;
+        border-radius: 8px;
+      }
 
-        img {
-          margin-right: 0.5rem;
+      .span {
+        margin-right: 0.5rem;
+      }
+
+      .reaction {
+        background-color: rgba($primary-light-red, 0.1);
+      }
+
+      .reaction-name {
+        color: $primary-light-red;
+      }
+
+      .memory {
+        background-color: rgba($primary-orangey-yellow, 0.1);
+      }
+
+      .memory-name {
+        color: $primary-orangey-yellow;
+      }
+
+      .verbal {
+        background-color: rgba($primary-green-teal, 0.1);
+      }
+
+      .verbal-name {
+        color: $primary-green-teal;
+      }
+
+      .visual {
+        background-color: rgba($primary-cobalt-blue, 0.1);
+      }
+
+      .visual-name {
+        color: $primary-cobalt-blue;
+      }
+
+      .reaction-score,
+      .memory-score,
+      .verbal-score,
+      .visual-score {
+        color: $dark-gray-blue;
+        font-weight: 700;
+      }
+
+      .total {
+        color: rgba($dark-gray-blue, 0.6);
+        font-weight: 500;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+
+        input {
+          background-color: $dark-gray-blue;
+          color: $white;
+          font-size: clamp(0.875rem, 5%, 2rem);
+          font-weight: 600;
+          padding: 0.8rem 5.7rem;
+          border: 1px solid $dark-gray-blue;
+          border-radius: 20px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $background-light-royal-blue;
+            border: 1px solid $background-light-royal-blue;
+          }
         }
       }
     }
-
-    .item-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 8px;
-    }
-
-    .span {
-      margin-right: 0.5rem;
-    }
-
-    .reaction {
-      background-color: rgba($primary-light-red, 0.1);
-    }
-
-    .reaction-name {
-      color: $primary-light-red;
-    }
-
-    .memory {
-      background-color: rgba($primary-orangey-yellow, 0.1);
-    }
-
-    .memory-name {
-      color: $primary-orangey-yellow;
-    }
-
-    .verbal {
-      background-color: rgba($primary-green-teal, 0.1);
-    }
-
-    .verbal-name {
-      color: $primary-green-teal;
-    }
-
-    .visual {
-      background-color: rgba($primary-cobalt-blue, 0.1);
-    }
-
-    .visual-name {
-      color: $primary-cobalt-blue;
-    }
-
-    .reaction-score,
-    .memory-score,
-    .verbal-score,
-    .visual-score {
-      color: $dark-gray-blue;
-      font-weight: 700;
-    }
-
-    .total {
-      color: rgba($dark-gray-blue, 0.6);
-      font-weight: 500;
-    }
-
-    .btn {
-      display: flex;
-      justify-content: center;
-      margin-top: 0.5rem;
-
-      input {
-        background-color: $dark-gray-blue;
-        color: $white;
-        font-size: clamp(0.875rem, 5%, 2rem);
-        font-weight: 600;
-        padding: 0.8rem 5.7rem;
-        border: 1px solid $dark-gray-blue;
-        border-radius: 20px;
-        cursor: pointer;
-
-        &:hover {
-          background-color: $background-light-royal-blue;
-          border: 1px solid $background-light-royal-blue;
-        }
-      }
-
-
-    }
-
   }
-
-
 }
 
 footer {
