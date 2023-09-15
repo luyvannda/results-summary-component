@@ -195,10 +195,25 @@ body {
   color: hsl(0, 0%, 100%);
   font-size: clamp(0.875rem, 5%, 2rem);
   font-weight: 600;
-  padding: 0.8rem 5.7rem;
+  padding: 0.8rem 5.6rem;
   border: 1px solid hsl(224, 30%, 27%);
   border-radius: 20px;
   cursor: pointer;
+}
+@media only screen and (max-width: 426px) {
+  .grid-container .right-container .hero-text-right .btn input {
+    padding: 0.8rem 32vw;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .grid-container .right-container .hero-text-right .btn input {
+    padding: 0.8rem 35vw;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .grid-container .right-container .hero-text-right .btn input {
+    padding: 0.8rem 33vw;
+  }
 }
 .grid-container .right-container .hero-text-right .btn input:hover {
   background-color: hsl(241, 81%, 54%);

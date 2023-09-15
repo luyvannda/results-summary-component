@@ -255,10 +255,22 @@ body {
           color: $white;
           font-size: clamp(0.875rem, 5%, 2rem);
           font-weight: 600;
-          padding: 0.8rem 5.7rem;
+          padding: 0.8rem 5.6rem;
           border: 1px solid $dark-gray-blue;
           border-radius: 20px;
           cursor: pointer;
+
+          @include max-device-width(426px) {
+            padding: 0.8rem 32vw;
+          }
+
+          @include max-device-width(376px) {
+            padding: 0.8rem 35vw;
+          }
+
+          @include max-device-width(321px) {
+            padding: 0.8rem 33vw;
+          }
 
           &:hover {
             background-color: $background-light-royal-blue;
