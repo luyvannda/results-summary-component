@@ -25,6 +25,13 @@ $pale-blue: hsl(221, 100%, 96%);
 $light-lavender: hsl(241, 100%, 89%);
 $dark-gray-blue: hsl(224, 30%, 27%);
 
+// Mixin for media queries
+@mixin max-device-width($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -48,14 +55,19 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: min(50vw, 640px);
-  height: 90vh;
+  width: min(32rem, 50vw);
+  min-height: 90vh;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
 
+  @include max-device-width(585px) {
+    grid-template-columns: 1fr;
+
+  }
+
   .left-container {
-    width: min(25vw, 20rem);
+    width: clamp(18rem, 5vw + 1rem, 25vw);
     height: clamp(23.5rem, 5vh + 1rem, 52.5vh);
     background: linear-gradient(to bottom,
         $background-light-slate-blue 0%,
@@ -92,7 +104,7 @@ body {
         align-items: center;
 
         h1 {
-          font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+          font-size: clamp(2.5rem, 5vw + 0.5rem, 3.5rem);
         }
       }
 
@@ -129,7 +141,7 @@ body {
   .right-container {
     display: flex;
     flex-direction: column;
-    width: min(25vw, 20rem);
+    width: clamp(18rem, 5vw + 1rem, 25vw);
     height: clamp(23.5rem, 5vh + 1rem, 52.5vh);
     background-color: $white;
     border-radius: 16px;
@@ -229,7 +241,7 @@ body {
         color: $white;
         font-size: clamp(0.875rem, 5%, 2rem);
         font-weight: 600;
-        padding: 0.8rem 7.5vw;
+        padding: 0.8rem 5.7rem;
         border: 1px solid $dark-gray-blue;
         border-radius: 20px;
         cursor: pointer;
@@ -248,12 +260,15 @@ body {
 
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
 
-  a {
-    color: hsl(228, 45%, 44%);
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+
   }
-
 }
